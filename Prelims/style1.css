@@ -1,0 +1,113 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border-radius: 50%;
+    }
+    img {
+        border-radius: 50% ;
+        margin-top: 1cm;
+    }
+    .navbar {
+        border-radius: 50px;
+        padding: 10px;
+        box-shadow: 0 25px 20px -220px rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.3in
+    }
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase; 
+        font-family: monospace;
+        font-size: 20px;
+    }
+    .navbar ul li::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    
+    .navbar ul li:hover::after {
+        width: 100%;
+    }
+    h1{
+        color: #6c0070;
+        float:center;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    p {
+        color: #000;
+        font-style:oblique;
+        font-size: large;
+        text-align:center;
+        margin-left: 1in;
+        margin-right: 1in;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    footer{
+        padding-top:-50px;
+        margin-top: 80px;
+        border-radius: 0%;
+    }
+    .footercointer{
+        width: 100%;
+        padding: 70px 30px 20px;
+    }
+    .socialicons{
+        display: flex;
+        justify-content: center;
+    }
+    .socialicons a{
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        background-color: rgb(54, 47, 56);
+        border-radius: 50%;
+    }
+    .socialicons a i{
+        font-size: 2em;
+        color: #D0A2F7;
+        opacity: 0.9;
+    }
+    .socialicons a:hover{
+        background-color: #e62df7;
+        transition: 0.5s;
+    }
+    .socialicons a:hover i{
+        color: white;
+        transition: 0.5ss;
+    }
+    .fotbot{
+        background-color:rgb(215, 239, 250);
+        padding: 20px;
+        text-align: center;
+    }
+    .fotbot p{
+        color: black;
+        font-size: 100%;
+    }
+    @media only screen and (max-width: 767px){
+        body{
+            overflow: auto;
+        }
+        .main{
+            flex-direction: column;
+            align-items: center;
+        }
+    }

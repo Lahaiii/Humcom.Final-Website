@@ -1,0 +1,173 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}   
+img {
+        border-radius: 50% ;
+        margin-top: 1cm;
+    }
+    .navbar {
+        border-radius: 50px;
+        padding: 10px;
+        box-shadow: 0 25px 20px -220px rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.3in
+    }
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    h1 {
+        color: rgb(165, 6, 72);
+        font-style:bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 30px;
+        font-size:50px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase; 
+        font-family: monospace;
+        font-size: 20px;
+    }
+    .navbar ul li::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    .navbar ul li:hover::after {
+        width: 100%;
+    }
+    .navbar ul li:hover::after {
+        width: 100%;
+    }
+    p{
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-style: absolute;
+        font-family: verdana;
+        text-align: center;
+        margin: 0.5in;
+    }
+    body{
+        background-image: url(tt.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    .icon{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background: #9f6bffb0;
+        margin: 20px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 100px;
+        font-family: sans-serif;
+        overflow: hidden;
+        box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+        transition: all .3s ease-out;
+    }
+    .icon:hover{
+        width: 400px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #000000;
+    }
+    .icon:hover i{
+        color: #fff;
+    }
+    .icon .fa-person-breastfeeding{
+        color: #864AF9;
+    }
+    .her:hover{
+        background: #f179b5;
+    }
+    .icon .fa-heart-pulse{
+        color: #864AF9;
+    }
+    .Fav:hover{
+        background: #f179b5;
+    }
+    .icon .fa-camera-retro{
+        color: #864AF9;
+    }
+    .gallery:hover{
+        background: #f179b5;
+    }
+    span a{
+        text-decoration: none;
+        color: #000000;
+    }
+    footer{
+        padding-top:-50px;
+        margin-top: 80px;
+        border-radius: 0%;
+    }
+    .footercointer{
+        width: 100%;
+        padding: 70px 30px 20px;
+    }
+    .socialicons{
+        display: flex;
+        justify-content: center;
+    }
+    .socialicons a{
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        background-color: rgb(54, 47, 56);
+        border-radius: 50%;
+    }
+    .socialicons a i{
+        font-size: 2em;
+        color: #D0A2F7;
+        opacity: 0.9;
+    }
+    .socialicons a:hover{
+        background-color: #e62df7;
+        transition: 0.5s;
+    }
+    .socialicons a:hover i{
+        color: white;
+        transition: 0.5ss;
+    }
+    .fotbot{
+        background-color:rgb(215, 239, 250);
+        padding: 20px;
+        text-align: center;
+    }
+    .fotbot p{
+        color: black;
+        font-size: 100%;
+    }
+@media only screen and (max-width: 767px){
+    body{
+        overflow: auto;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+}
